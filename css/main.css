@@ -1,0 +1,494 @@
+/*-----------------------*/
+/*Стили для всей страницы*/
+/*-----------------------*/
+
+* {
+	text-decoration: none;
+}
+
+a {
+	color: #000;
+}
+
+body {
+	font-family: "LatoRegular", sans-serif;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+h3 {
+	font-family: "LatoBold", sans-serif;
+}
+
+p {
+	color: #848789;
+}
+
+/*-----------------------*/
+/*Стили для прелоадера*/
+/*-----------------------*/
+
+.loader {
+    background: none repeat scroll 0 0 #ffffff;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.loaderInner {
+    background-image: url("../img/load.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    height: 64px;
+    width: 64px;
+    margin-top: -32px;
+    margin-left: -32px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+
+/*-----------------------*/
+/*Стили для головы сайта*/
+/*-----------------------*/
+
+header{
+	background: url(../img/head-img.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+.menu-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;	
+	padding: 2% 0;
+	margin: 0;
+}
+.menu-list li {
+	-ms-align-self: center;
+	align-self: center;
+	display: inline-block;
+	padding: 0 3%;
+}
+.menu-list li a {
+	display: block;
+	opacity: 1;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+.menu-list li a:hover {
+	opacity: 0.5;
+}
+
+/*-----------------------*/
+/*Стили для секции .preview*/
+/*-----------------------*/
+
+.preview {
+	background-color: #f7f7f7;
+	text-align: center;
+	padding: 5% 15%;
+}
+
+/*-----------------------*/
+/*Стили для секции .inf-of-bike*/
+/*-----------------------*/
+
+.inf-of-bike > div {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.img-block {
+	position: relative;
+	flex-basis: 67%;
+}
+
+.img-block img:first-child {
+	width: 100%;
+	height: 100%;
+}
+
+.img-block img:nth-last-child(1) {
+	position: absolute;
+	left: 45%;
+	top:45%;
+	width: 10%;
+	z-index: 100;
+}
+
+.inf-block {
+	flex-basis: 33%;
+	height: 100%;
+	-ms-align-self: flex-end;
+	align-self: flex-end;
+}
+
+.inf-block .information {
+	margin: 5% 5% 10% 5%;
+	text-align: center;
+	height: 55%;
+	position: relative;
+}
+
+.inf-block .information hr {
+	width: 10%;
+}
+
+.inf-block div:nth-last-child(1) {
+	width: 100%;
+	height: 30%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+}
+
+.inf-block div:nth-last-child(1)::after {
+	content: '';
+	border: 8px solid transparent;
+	border-top: 10px solid white;
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	left: 50%;
+	margin-left: -5px;
+}
+
+.inf-block div:nth-last-child(1) img {
+	width: 100%;
+}
+
+.third-bike div:nth-last-child(1) img {
+	width: 100%;
+	height: 100%;
+}
+
+.third-bike div:nth-last-child(1),
+.third-bike .img-block {
+	flex-basis: 33%;
+}
+
+.third-bike .inf-block {
+	flex-basis: 34%;
+}
+
+.third-bike .img-block img:nth-last-child(1) {
+	left: 37%;
+	top:46%;
+	width: 26%;
+	height: 8%;
+}
+
+/*-----------------------*/
+/*Стили для секции .owl-carousel*/
+/*-----------------------*/
+
+.owl-carousel {
+	padding-bottom: 5%;
+}
+
+.car-container {
+	margin: 10% 10%;
+	text-align: center;
+}
+
+.car-container i {
+	color: #56c7ee;
+}
+
+.car-container h3 span {
+	color: #848789;
+}
+
+.car-container p {
+	font-family: "LatoItalic", sans-serif;
+}
+
+/*-----------------------*/
+/*Стили для секции .galery*/
+/*-----------------------*/
+
+.galery {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.galery div {
+	flex-basis: 33%;
+}
+
+.galery .section-center {
+	flex-basis: 34%;
+}
+
+.galery div > img {
+	width: 50%;
+	height: 50%;
+	display: block;
+	float: left;
+}
+
+.galery div.section-center > img {
+	height: 100%;
+}
+
+.galery div > .full-width {
+	width: 100%;
+	height: 50%;
+}
+
+/*-----------------------*/
+/*Стили всплывающей формы у секции .galery*/
+/*-----------------------*/
+
+.window-full-bg {
+	width: 100%;
+	height: 100vh;
+	background-color: #7fcaaf;
+	z-index: 9000;
+	opacity: 0.5;
+	position: fixed;
+	top: 0;
+}
+
+.full-img-container {
+	z-index: 9999;
+	position: fixed;
+	border: 2px solid white;
+	border-radius: 9px;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.full-img-container img {
+	width: 100%;
+	display: block;
+	border-radius: 10px;
+}
+
+.cancel {
+	width: 20px;
+	height: 20px;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	z-index: 9100;
+	opacity: 1;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.cancel:hover {
+	opacity: 0.5;
+}
+
+.cancel:after {
+	content: '';
+	width: 24px;
+	height: 2px;
+	top: 19px;
+	right: 8px;
+	background-color: #000;
+	z-index: 9999;
+	position: fixed;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.cancel:before {
+	content: '';
+	width: 24px;
+	height: 2px;
+	top: 19px;
+	right: 8px;
+	background-color: #000;
+	z-index: 9999;
+	position: fixed;
+	-webkit-transform: rotate(315deg);
+	-ms-transform: rotate(315deg);
+	-o-transform: rotate(315deg);
+	transform: rotate(315deg);
+}
+
+/*-----------------------*/
+/*Стили для секции .link-shop*/
+/*-----------------------*/
+
+.link-shop {
+	background-color: #282f35;
+	padding: 10% 0;
+	width: 100%;
+	text-align: center;
+}
+
+.link-shop a {
+	padding: 2% 5%;
+	border: 1px solid white;
+	color: white;
+	opacity: 1;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.link-shop a:hover {
+	opacity: 0.5;
+}
+
+/*-----------------------*/
+/*Стили для секции .submission-form*/
+/*-----------------------*/
+
+.submission-form {
+	text-align: center;
+	padding: 10% 0 ;
+}
+
+.submission-form p {
+	font-family: "LatoItalic", sans-serif;
+}
+
+.submission-form form {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.submission-form form input {
+	border: 1px solid #848789;
+	width: 25%;
+	padding: 2% 3%;
+	font-family: "LatoItalic", sans-serif;
+}
+
+.submission-form form a {
+	background-color: #64c29e;
+	color: #fff;
+	margin-left: 1%;
+	padding: 2% 3%;
+	width: 5%;
+	display: block;
+}
+
+/*-----------------------*/
+/*Стили для подвала*/
+/*-----------------------*/
+
+footer {
+	background-color: #f7f7f7;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+footer div {
+	flex-basis: 40%;
+	margin: 5% 0;
+}
+
+footer > .link {
+	text-align: center;
+	flex-basis: 20%;
+	-ms-align-self: center;
+	align-self: center;
+}
+
+footer > .link > div {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer > .link > div > div {
+	flex-basis: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+footer > .link .twitter {
+	background-color: #78cdf0;
+}
+
+footer > .link .facebook {
+	background-color: #537bbd;
+}
+
+footer > .link .pinterest {
+	background-color: #eb5755;
+}
+
+footer > .link div a i {
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+footer > .link div a {
+	display: block;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+	position: relative;
+}
+
+footer > .link div a:hover {
+	opacity: 0.5;
+}
+
+footer .inf {
+	padding-left: 2%;
+}
+
+footer .inf p,
+footer .inf h3 {
+	margin: 0;
+	color: #848789;
+}
+
+footer .inf p {
+	font-family: "LatoItalic", sans-serif;
+}
+
