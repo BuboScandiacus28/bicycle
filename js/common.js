@@ -72,12 +72,14 @@ $(document).ready(function() {
 			if (!window["window-full-bg"]) 
 				$("body").append("<div id = 'window-full-bg'></div><div id = 'full-img-container'><img></div><div class = 'cancel'></div>");
 			$("#window-full-bg").addClass('window-full-bg');
+			$("#full-img-container").css('display', 'block');
 			$("#full-img-container").addClass('full-img-container');
 			$("#full-img-container img").attr('src', $('.galery .active')[0].getAttribute('src'));
 			$(".cancel").css('display', 'block');
 		}
 		if (target.className == "cancel") {
 			$("#window-full-bg").removeClass('window-full-bg');
+			$("#full-img-container").css('display', 'none');
 			$("#full-img-container").removeClass('full-img-container');
 			$("#full-img-container img").attr('src', '#');
 			$(".cancel").css('display', 'none');
