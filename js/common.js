@@ -77,7 +77,7 @@ $(document).ready(function() {
 			$("#full-img-container img").attr('src', $('.galery .active')[0].getAttribute('src'));
 			$(".cancel").css('display', 'block');
 		}
-		if (target.className == "cancel") {
+		if (target.className == "cancel" || target.className == "window-full-bg") {
 			$("#window-full-bg").removeClass('window-full-bg');
 			$("#full-img-container").css('display', 'none');
 			$("#full-img-container").removeClass('full-img-container');
