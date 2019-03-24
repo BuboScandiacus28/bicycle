@@ -92,7 +92,7 @@ $(document).ready(function() {
 		 
 		$.ajax({
 			type: "POST",
-			url: "https://buboscandiacus28.github.io/bicycle/contact.php",
+			url: "https://buboscandiacus28.github.io/bicycle/mail.php",
 			data: str,
 			success: function(msg) {
 				if(msg == 'OK') {
