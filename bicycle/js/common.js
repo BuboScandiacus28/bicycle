@@ -110,7 +110,7 @@ $(document).ready(function() {
 
 //прелоадер
 
-$(document).load(function() {
+$(function() {
 	$(".loaderInner").fadeOut(); 
 	$(".loader").delay(400).fadeOut("slow"); 
 });
