@@ -81,6 +81,7 @@ header{
 	align-self: center;
 	display: inline-block;
 	padding: 0 3%;
+	max-width: auto;
 }
 .menu-list li a {
 	display: block;
