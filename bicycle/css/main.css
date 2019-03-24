@@ -81,6 +81,7 @@ header{
 	align-self: center;
 	display: inline-block;
 	padding: 0 3%;
+	max-width: auto;
 }
 .menu-list li a {
 	display: block;
@@ -349,7 +350,7 @@ header{
 	text-align: center;
 }
 
-.link-shop .form-btn {
+.link-shop a {
 	padding: 2% 5%;
 	border: 1px solid white;
 	color: white;
@@ -359,7 +360,7 @@ header{
 	transition: opacity 1s;
 }
 
-.link-shop .form-btn:hover {
+.link-shop a:hover {
 	opacity: 0.5;
 }
 
@@ -392,7 +393,7 @@ header{
 	font-family: "LatoItalic", sans-serif;
 }
 
-.submission-form form a {
+.submission-form form .form-btn {
 	background-color: #64c29e;
 	color: #fff;
 	margin-left: 1%;
