@@ -350,7 +350,7 @@ header{
 	text-align: center;
 }
 
-.link-shop a {
+.link-shop .form-btn {
 	padding: 2% 5%;
 	border: 1px solid white;
 	color: white;
@@ -360,7 +360,7 @@ header{
 	transition: opacity 1s;
 }
 
-.link-shop a:hover {
+.link-shop .form-btn:hover {
 	opacity: 0.5;
 }
 
