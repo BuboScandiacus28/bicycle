@@ -87,7 +87,7 @@ $(document).ready(function() {
 	});
 
 	//форма отправки
-	$(".ajax-contact-form").submit(function() {
+	/*$(".ajax-contact-form").submit(function() {
 		var str = $(this).serialize();
 		 
 		$.ajax({
@@ -105,7 +105,7 @@ $(document).ready(function() {
 			}
 		});
 		return false;
-	});
+	});*/
 });
 
 //прелоадер
