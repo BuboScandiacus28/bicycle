@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Webpack app</title>
+  <link href="assets/css/app.css" rel="stylesheet"></head>
+  <body>
+    <main class="page">
+      <div class="page__wrapper">
+        <section class="btn-section">
+          <div class="btn-section__wrapper">
+              <div class="standart-heading">
+                <div class="standart-heading__wrapper">
+                  <h1 class="standart-heading__text">standard buttons</h1>
+                </div>
+              </div>
+            <div class="btn-section__content-box content-box">
+                <div class="standart-btn small_button">
+                  <div class="standart-btn__wrapper green_btn_theme ripple"><a class="standart-btn__link" href="#">button</a></div>
+                </div>
+                <div class="standart-btn undefined">
+                  <div class="standart-btn__wrapper green_btn_theme ripple"><a class="standart-btn__link" href="#">button</a></div>
+                </div>
+                <div class="standart-btn undefined">
+                  <div class="standart-btn__wrapper red_btn_theme ripple"><a class="standart-btn__link" href="#">button</a></div>
+                </div>
+                <div class="standart-btn small_button">
+                  <div class="standart-btn__wrapper red_btn_theme ripple"><a class="standart-btn__link" href="#">button</a></div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="btn-arrow-section">
+          <div class="btn-arrow-section__wrapper">
+              <div class="standart-heading">
+                <div class="standart-heading__wrapper">
+                  <h1 class="standart-heading__text">arrow buttons</h1>
+                </div>
+              </div>
+            <div class="btn-arrow-section__content-box content-box">
+                <div class="arrow-btn">
+                  <div class="arrow-btn__wrapper green_theme_arrow">
+                    <div class="arrow-btn__arrow left"></div>
+                  </div>
+                </div>
+                <div class="arrow-btn">
+                  <div class="arrow-btn__wrapper green_theme_arrow">
+                    <div class="arrow-btn__arrow right"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="chart-section">
+          <div class="chart-section__wrapper">
+              <div class="standart-heading">
+                <div class="standart-heading__wrapper">
+                  <h1 class="standart-heading__text">percentages / pie chart</h1>
+                </div>
+              </div>
+            <div class="chart-section__content-box content-box">
+                <svg class="percentages" width="100%" height="100%" viewBox="0 0 42 42">
+                  <circle class="percentages__hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                  <circle class="percentages__ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fff" stroke-width="3"></circle>
+                  <circle class="percentages__segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#e75735" stroke-width="1.8" stroke-dasharray="0 100" stroke-dashoffset="25">
+                    <animate data-checked attributeName="stroke-dasharray" from="0 100" to="0 100" dur="4s" begin="indefinite" fill="freeze"></animate>
+                  </circle>
+                  <g class="percentages__text-container">
+                    <text class="percentages__text" x="50%" y="50%">0</text>
+                  </g>
+                </svg>
+                <svg class="percentages" width="100%" height="100%" viewBox="0 0 42 42">
+                  <circle class="percentages__hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                  <circle class="percentages__ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fff" stroke-width="3"></circle>
+                  <circle class="percentages__segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#e75735" stroke-width="1.8" stroke-dasharray="38 62" stroke-dashoffset="25">
+                    <animate data-checked attributeName="stroke-dasharray" from="0 100" to="38 62" dur="4s" begin="indefinite" fill="freeze"></animate>
+                  </circle>
+                  <g class="percentages__text-container">
+                    <text class="percentages__text" x="50%" y="50%">38</text>
+                  </g>
+                </svg>
+                <svg class="percentages" width="100%" height="100%" viewBox="0 0 42 42">
+                  <circle class="percentages__hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                  <circle class="percentages__ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fff" stroke-width="3"></circle>
+                  <circle class="percentages__segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#e75735" stroke-width="1.8" stroke-dasharray="62 38" stroke-dashoffset="25">
+                    <animate data-checked attributeName="stroke-dasharray" from="0 100" to="62 38" dur="4s" begin="indefinite" fill="freeze"></animate>
+                  </circle>
+                  <g class="percentages__text-container">
+                    <text class="percentages__text" x="50%" y="50%">62</text>
+                  </g>
+                </svg>
+                <svg class="percentages" width="100%" height="100%" viewBox="0 0 42 42">
+                  <circle class="percentages__hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                  <circle class="percentages__ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fff" stroke-width="3"></circle>
+                  <circle class="percentages__segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#e75735" stroke-width="1.8" stroke-dasharray="89 11" stroke-dashoffset="25">
+                    <animate data-checked attributeName="stroke-dasharray" from="0 100" to="89 11" dur="4s" begin="indefinite" fill="freeze"></animate>
+                  </circle>
+                  <g class="percentages__text-container">
+                    <text class="percentages__text" x="50%" y="50%">89</text>
+                  </g>
+                </svg>
+                <svg class="chart" width="100%" height="100%" viewBox="0 0 42 42">
+                  <circle class="chart__hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                  <circle class="chart__ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#e5e5e5" stroke-width="6"></circle>
+                  <circle class="chart__segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#747474" stroke-width="6" stroke-dasharray="10 90" stroke-dashoffset="25">
+                    <animate data-checked attributeName="stroke-dasharray" from="0 100" to="10 90" dur="4s" begin="indefinite" fill="freeze"></animate>
+                    <animate attributeName="stroke-dashoffset" from="25" to="25" dur="4s" begin="indefinite" fill="freeze"></animate>
+                  </circle>
+                  <circle class="chart__segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#e75735" stroke-width="6" stroke-dasharray="20 80" stroke-dashoffset="115">
+                    <animate data-checked attributeName="stroke-dasharray" from="0 100" to="20 80" dur="4s" begin="indefinite" fill="freeze"></animate>
+                    <animate attributeName="stroke-dashoffset" from="125" to="115" dur="4s" begin="indefinite" fill="freeze"></animate>
+                  </circle>
+                  <circle class="chart__segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#4eb7a8" stroke-width="6" stroke-dasharray="30 70" stroke-dashoffset="95">
+                    <animate data-checked attributeName="stroke-dasharray" from="0 100" to="30 70" dur="4s" begin="indefinite" fill="freeze"></animate>
+                    <animate attributeName="stroke-dashoffset" from="125" to="95" dur="4s" begin="indefinite" fill="freeze"></animate>
+                  </circle>
+                </svg>
+            </div>
+          </div>
+        </section>
+        <section class="slider-section">
+          <div class="slider-section__wrapper">
+              <div class="standart-heading">
+                <div class="standart-heading__wrapper">
+                  <h1 class="standart-heading__text">sliders</h1>
+                </div>
+              </div>
+            <div class="slider-section__content-box content-box">
+                <div class="slider red_slider_theme" id="slider">
+                  <div class="slider__wrapper">
+                    <div class="slider__thumb"></div>
+                    <div class="slider__placeholder">
+                      <p class="slider__placeholder-text">0</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider green_slider_theme" id="slider">
+                  <div class="slider__wrapper">
+                    <div class="slider__thumb"></div>
+                    <div class="slider__tail"></div>
+                    <div class="slider__ruler">
+                      <p class="slider__ruler-text">0</p>
+                      <p class="slider__ruler-text">25</p>
+                      <p class="slider__ruler-text">50</p>
+                      <p class="slider__ruler-text">75</p>
+                      <p class="slider__ruler-text">100</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="stages-section">
+          <div class="stages-section__wrapper"> 
+              <div class="standart-heading">
+                <div class="standart-heading__wrapper">
+                  <h1 class="standart-heading__text">stages</h1>
+                </div>
+              </div>
+              <div class="stages" id="stages">
+                <div class="stages__wrapper stages_color_theme">
+                  <div class="stages__progress-bar"></div>
+                  <div class="stages__dot active ">
+                    <h2>1</h2>
+                  </div>
+                  <div class="stages__dot active ">
+                    <h2>2</h2>
+                  </div>
+                  <div class="stages__dot active break-pointer">
+                    <h2>3</h2>
+                  </div>
+                  <div class="stages__dot">
+                    <h2>4</h2>
+                  </div>
+                  <div class="stages__dot">
+                    <h2>5</h2>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <section class="forms-section">
+          <div class="forms-section__wrapper">
+              <div class="standart-heading">
+                <div class="standart-heading__wrapper">
+                  <h1 class="standart-heading__text">form elements</h1>
+                </div>
+              </div>
+            <div class="forms-section__content-container">
+              <div class="forms-section__form-example">
+                  <form class="form color_theme" action="##" novalidate>
+                    <div class="form__name-container form__container">
+                      <input class="form__name input-field" type="text" placeholder="Your Name" required>
+                        <div class="check error" style="display: none"> 
+                          <h3>error</h3>
+                        </div>
+                        <div class="check success" style="display: none">
+                          <h3>thanks!</h3>
+                        </div>
+                    </div>
+                    <div class="form__email-container form__container">
+                      <input class="form__email input-field" type="email" placeholder="Your Email" required>
+                        <div class="check error" style="display: none"> 
+                          <h3>error</h3>
+                        </div>
+                        <div class="check success" style="display: none">
+                          <h3>thanks!</h3>
+                        </div>
+                    </div>
+                    <textarea class="form__message input-field" placeholder="Your Message"></textarea>
+                    <input class="form__submit" type="submit" value="SUBMIT">
+                  </form>
+              </div>
+              <div class="forms-section__form-component">
+                <div class="forms-section__toggles">
+                    <div class="standart-heading">
+                      <div class="standart-heading__wrapper">
+                        <h1 class="standart-heading__text">toggles</h1>
+                      </div>
+                    </div>
+                    <div class="tg-container"> 
+                      <input class="tgl tgl-theme" id="tgl" type="checkbox" checked>
+                      <label class="tgl-btn" for="tgl"></label>
+                    </div>
+                </div>
+                <div class="forms-section__tick-boxes">
+                    <div class="standart-heading">
+                      <div class="standart-heading__wrapper">
+                        <h1 class="standart-heading__text">tick boxes</h1>
+                      </div>
+                    </div>
+                    <div class="tcb-container"> 
+                      <input class="tcb tcb-theme" id="tcb" type="checkbox">
+                      <label class="tcb-btn" for="tcb"></label>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="profile-search-list">
+          <div class="profile-search-list__wrapper">
+            <div class="search-drop-down-section">
+              <div class="search-drop-down-section__wrapper">
+                  <div class="standart-heading">
+                    <div class="standart-heading__wrapper">
+                      <h1 class="standart-heading__text">search / drop down</h1>
+                    </div>
+                  </div>
+                <div class="search-drop-down-section__search">
+                    <form class="search search_color_theme" action="##" method="get" novalidate>
+                      <input class="search__input" type="text" placeholder="Search">
+                      <button class="search__button" type="submit">
+                        <svg class="icon-search">
+                          <use xlink:href="assets/img/search.svg#icon-search"></use>
+                        </svg>
+                      </button>
+                    </form>
+                </div>
+                <div class="search-drop-down-section__drop-down">
+                    <div class="dropdown">
+                      <div class="dropdown__wrapper drop-down_color_theme">
+                        <div class="dropdown__active-item-container"><span class="dropdown__active-item item">Choose An Option</span>
+                          <div class="dropdown__arrow"></div>
+                        </div>
+                        <ul class="dropdown__list close">
+                          <li class="li item"><a class="a" href="##">This is option 1</a></li>
+                          <li class="li item"><a class="a" href="##">This is option 2</a></li>
+                          <li class="li item"><a class="a" href="##">This is option 3</a></li>
+                          <li class="li item"><a class="a" href="##">This is option 4</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="user-profile-section">
+              <div class="user-profile-section__wrapper">
+                  <div class="standart-heading">
+                    <div class="standart-heading__wrapper">
+                      <h1 class="standart-heading__text">user profile</h1>
+                    </div>
+                  </div>
+                <div class="user-profile-section__content">
+                    <div class="user-profile">
+                      <div class="user-profile__wrapper user-profile_red_theme">
+                        <div class="user-profile__user-img-container"><img class="user-profile__user-img" src="assets/img/user-man.png"></div>
+                        <div class="user-profile__user-inf-container">
+                          <h3 class="user-profile__user-name">John Smith</h3>
+                          <h4 class="user-profile__user_job">ux designer</h4>
+                          <div class="user-profile__href-container"><a class="user-profile__a" href="##">
+                              <svg class="user-profile__icon">
+                                <use xlink:href="assets/img/facebook.svg#icon-facebook"></use>
+                              </svg></a><a class="user-profile__a" href="##">
+                              <svg class="user-profile__icon">
+                                <use xlink:href="assets/img/twitter.svg#icon-twitter"></use>
+                              </svg></a><a class="user-profile__a" href="##">
+                              <svg class="user-profile__icon">
+                                <use xlink:href="assets/img/dribbble.svg#icon-dribbble"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user-profile">
+                      <div class="user-profile__wrapper user-profile_green_theme">
+                        <div class="user-profile__user-img-container"><img class="user-profile__user-img" src="assets/img/user-woman.png"></div>
+                        <div class="user-profile__user-inf-container">
+                          <h3 class="user-profile__user-name">Sarah Brown</h3>
+                          <h4 class="user-profile__user_job">developer</h4>
+                          <div class="user-profile__href-container"><a class="user-profile__a" href="##">
+                              <svg class="user-profile__icon">
+                                <use xlink:href="assets/img/facebook.svg#icon-facebook"></use>
+                              </svg></a><a class="user-profile__a" href="##">
+                              <svg class="user-profile__icon">
+                                <use xlink:href="assets/img/twitter.svg#icon-twitter"></use>
+                              </svg></a><a class="user-profile__a" href="##">
+                              <svg class="user-profile__icon">
+                                <use xlink:href="assets/img/dribbble.svg#icon-dribbble"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="news-events-section">
+          <div class="news-events-section__wrapper">
+              <div class="standart-heading">
+                <div class="standart-heading__wrapper">
+                  <h1 class="standart-heading__text">news &amp; events</h1>
+                </div>
+              </div>
+            <div class="news-events-section__content">
+                <div class="news-events">
+                  <div class="news-events__wrapper news_color_theme">
+                    <div class="news-events__img-container"><img class="news-events__img" src="assets/img/news-img.png"></div>
+                    <div class="news-events__content">
+                      <div class="news-events__news">
+                        <h1 class="news-events__title">It's all going downhill</h1>
+                        <h4 class="news-events__date">24 august 2013</h4>
+                        <p class="news-events__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-events">
+                  <div class="news-events__wrapper events_color_theme">
+                    <div class="news-events__img-container"><img class="news-events__img" src="assets/img/event-img.png"></div>
+                    <div class="news-events__content">
+                      <div class="news-events__event">
+                        <h1 class="news-events__date">24<span class="news-events__month">Aug</span></h1>
+                        <h4 class="news-events__title">this is the title</h4>
+                        <p class="news-events__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="news-events__btn" href="##">add to calendar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="location-section">
+          <div class="location-section__wrapper">
+              <div class="standart-heading">
+                <div class="standart-heading__wrapper">
+                  <h1 class="standart-heading__text">location</h1>
+                </div>
+              </div>
+            <div class="location-section__content">
+                <div class="location">
+                  <div class="location__wrapper location_color_theme">
+                    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=8110d007-3e74-4efe-8ec5-c9f62f20e5c4" type="text/javascript"></script>
+                    <div class="location__map" id="map"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="calendar-messaging">
+          <div class="calendar-messaging__wrapper">
+            <div class="calendar-section">
+              <div class="calendar-section__wrapper">
+                  <div class="standart-heading">
+                    <div class="standart-heading__wrapper">
+                      <h1 class="standart-heading__text">calendar</h1>
+                    </div>
+                  </div>
+                <div class="calendar-section__content">
+                    <div class="calendar">
+                      <div class="calendar__wrapper calendar_color_theme">
+                        <table class="calendar__table" id="calendar">
+                          <thead class="thead">
+                            <tr class="calendar__number-container">
+                              <td class="calendar__today" colspan="7"></td>
+                            </tr>
+                            <tr class="calendar__month-container">
+                              <td class="calendar__left-arrow"></td>
+                              <td class="calendar__month" colspan="5"></td>
+                              <td class="calendar__right-arrow"></td>
+                            </tr>
+                            <tr class="calendar__weekday-container">
+                              <td>mon</td>
+                              <td>tue</td>
+                              <td>wed</td>
+                              <td>thu</td>
+                              <td>fri</td>
+                              <td>sat</td>
+                              <td>sun</td>
+                            </tr>
+                          </thead>
+                          <tbody class="calendar__content"></tbody>
+                          <tbody class="calendar__today-container">
+                            <tr>
+                              <td class="calendar__go-to-today" colspan="7">today</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="messaging-section"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+  <script type="text/javascript" src="assets/js/app.js"></script></body>
+</html>
