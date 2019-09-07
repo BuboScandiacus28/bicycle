@@ -1,0 +1,1113 @@
+body {
+	font-family: 'Roboto-Regular', Sans-Serif;
+	color: black;
+	font-size: 16px;
+}
+
+body > svg {
+	display: none;
+}
+
+header {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-color: #f3f9ff;
+}
+
+section {
+	margin: 5% 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+/* Многослойный фон */
+
+header > div.background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.back_img.background {
+	background: url(../img/back_head.png) no-repeat;
+	z-index: 0;
+	overflow: hidden;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	left: -40%;
+}
+
+.back_opacity.background {
+	background-image: linear-gradient( to right, rgba(243,249,255,0.5), rgba(243,249,255,1) );
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	left: -40%;
+	z-index: 5;
+}
+
+.back_down_img.background {
+	background: url(../img/back_down_head.png) no-repeat;
+	z-index: 15;
+	height: 15%;
+	top: 85%;
+}
+
+.back_circle.background {
+	left: 5%;
+	top: 15vh;
+	width: 75vh;
+	height: 75vh;
+	z-index: 10;
+	background: url(../img/back_circl_border.png) no-repeat;
+	-webkit-background-size: 90%;
+	background-size: 90%;
+}
+
+.circle_img {
+	position: absolute;
+	background: center center url(../img/back_head.png) no-repeat;
+	overflow: hidden;
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
+	z-index: 10;
+	width: 95%;
+	height: 95%;
+	border-radius: 50%;
+	top: 10%;
+	left: 10%;
+}
+
+.legs.background {
+	left: 1%;
+	background: url(../img/legs.png) no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	width: 88.5vh;
+	height: 88.5vh;
+	z-index: 20;
+}
+
+.tablet.background {
+	left: 12.5%;
+	background: url(../img/tablet.png) no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	width: 40%;
+	height: 40vh;
+	top: 60vh;
+	z-index: 25;
+}
+
+.tablet > div {
+	position: absolute;
+	padding: 1%;
+	border-radius: 5px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.tablet_active {
+	background-color: #ff6b00;
+	top: -3%;
+	right: 37.5%;
+}
+
+.tablet_norm {
+	background-color: #a8ca3f;
+	top: 32.5%;
+	right: 22.5%;
+}
+
+.tablet .text {
+	font-family: 'Roboto-Black', Sans-Serif;
+	color: #fff;
+	font-size: 1.2rem;
+	display: inline;
+}
+
+.tablet > div > svg {
+	width: 0.8rem;
+	height: 0.9rem;
+	fill: #fff;
+}
+
+/* Верхнее меню лого и информацией */
+
+.fixed_header {
+	width: 100%;
+	height: 10vh;
+	z-index: 50;
+	padding-top: 1.5%;
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.logo_container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	margin-right: 5%;
+}
+
+.logo_text {
+	font-size: 1.5rem;
+	padding-left: 10px;
+}
+
+.info_list {
+	list-style-type: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	flex-basis: 50%;
+	margin-right: 1.5%;
+}
+
+.info_list .item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	-ms-align-items: center;
+	align-items: center;
+	min-width: 30%;
+	font-style: italic;
+	color: #adb5bd;
+}
+
+.info_list .item svg {
+	padding-right: 10px;
+	width: 5rem;
+	height: 4rem;
+	fill: #adb5bd;
+}
+
+/* Остальной header */ 
+
+.header_content {
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding-top: 1%;
+	height: 99%;
+	z-index: 50;
+}
+
+.stub {
+	flex-basis: 43%;
+	height: 100%;
+}
+
+/* Блок с информацией */ 
+
+.main_header_container {
+	flex-basis: 26%;
+}
+
+.main_header_container > h1 {
+	font-family: 'Roboto-Black', Sans-Serif;
+	font-size: 3rem;
+	width: 85%;
+}
+
+.main_header_container > h1 .text_size {
+	font-size: 1.9rem;
+	height: 10px;
+}
+
+.main_header_container span.green, .main_header_container span.orange {
+	position: relative;
+}
+
+.main_header_container span.green:before, .main_header_container span.orange:before {
+	position: absolute;
+	content: '';
+	bottom: -4px;
+	width: 100%;
+	height: 5px;
+}
+
+.main_header_container span.green:before {
+	background-color: #a8ca3f;
+}
+
+.main_header_container span.orange:before {
+	background-color: #ff6b00;
+}
+
+.main_header_list {
+	list-style-type: none;
+	margin-top: 10px;
+}
+
+.main_header_item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	margin: 6% 0;
+}
+
+.main_header_list .dots_border {
+	position: relative;
+	min-width: 50px;
+	height: 50px;
+	background-color: #e8edc9;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.main_header_list .dots_border .dots {
+	position: absolute;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	top: 5px;
+	left: 5px;
+	width: 40px;
+	height: 40px;
+	background-color: #a7c93d;
+	border-radius: 50%;
+}
+
+.main_header_list .dots_border .dots > .text {
+	color: #fff;
+}
+
+.main_header_item .text {
+	line-height: 1.5;
+}
+
+/* Форма в header */ 
+
+.header_form {
+	position: relative;
+	flex-basis: 22%;
+	margin-right: 2%;
+	height: 80%;
+	background-color: #a8ca3f;
+	border-radius: 10px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.header_form:before {
+	position: absolute;
+	top: 0;
+	left: 23%;
+	height: 25px;
+	width: 40%;
+	text-align: right;
+	padding: 0 5%;
+	background-color: #f3f9ff;
+	content: 'Бесплатно';
+	border-right: 7px solid #a8ca3f;
+	border-bottom: 7px solid #a8ca3f;
+	border-left: 7px solid #a8ca3f;
+	border-radius: 0 0 10px 10px;
+}
+
+.header_form .bus_container {
+	position: absolute;
+	top: 0;
+	left: 30%;
+	width: 30px;
+	height: 15px;
+	fill: #ff6b00;
+}
+
+.header_form_wrapper {
+	background-color: #fff;
+	width: calc(90% - 14px);
+	height: calc(100% - 14px);
+	border-radius: 10px;
+	padding: 0 5%;
+}
+
+.header_form_wrapper .stock {
+	margin: 15% auto 3% auto;
+	width: 90%;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.header_form_wrapper .stock span {
+	display: block;
+	color: #ff6b00;
+}
+
+.header_form_wrapper .prices {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: auto;
+}
+
+.header_form_wrapper .old_price,
+.header_form_wrapper .new_price {
+	flex-basis: 40%;
+	text-align: center;
+}
+
+.header_form_wrapper .old_price .text{
+	color: #989898;
+}
+
+.header_form_wrapper .old_price .price,
+.header_form_wrapper .new_price .price {
+	font-size: 2rem;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 2px 0;
+	position: relative;
+}
+
+.header_form_wrapper .old_price .price svg,
+.header_form_wrapper .new_price .price svg {
+	padding-left: 5px;
+	fill: #000;
+	width: 1.3rem;
+	max-height: 100%;
+	height: 1.8rem;
+}
+
+.header_form_wrapper .old_price .price:after,
+.header_form_wrapper .old_price .price:before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 1px;
+	top: 0;
+	left: 0;
+	background-color: red;
+}
+
+.header_form_wrapper .old_price .price:after {
+	-webkit-transform: translateY(15px) rotate(15deg);
+	-ms-transform: translateY(15px) rotate(15deg);
+	-o-transform: translateY(15px) rotate(15deg);
+	transform: translateY(15px) rotate(15deg);
+}
+
+.header_form_wrapper .old_price .price:before {
+	-webkit-transform: translateY(15px) rotate(-15deg);
+	-ms-transform: translateY(15px) rotate(-15deg);
+	-o-transform: translateY(15px) rotate(-15deg);
+	transform: translateY(15px) rotate(-15deg);
+}
+
+.header_form_wrapper .new_price .price {
+	font-family: 'Roboto-Bold', Sans-Serif;
+	background-color: #ffcb02;
+	border-radius: 5px;
+}
+
+.header_form_wrapper form {
+	padding-top: 5%;
+}
+
+.header_form_wrapper form > div {
+	padding: 2% 0;
+	width: 100%;
+	position: relative;
+	height: 9vh;
+}
+
+.header_form_wrapper form > div input {
+	width: calc(100% - 60px);
+	height: 100%;
+	background-color: #eef2f7;
+	border-radius: 40px;
+	padding-left: 50px;
+	padding-right: 10px;
+	border: 0;
+}
+
+.header_form_wrapper form > div svg {
+	position: absolute;
+	top: calc(50% - 0.7rem);
+	left: 15px;
+	width: 1.5rem;
+	height: 1.5rem;
+	fill: #ff6b00;
+}
+
+.header_form_wrapper form .submit {
+	margin-top: 5%;
+	width: 100%;
+	height: 12vh;
+	border: 0;
+	border-radius: 40px;
+	padding: 5%;
+	background-color: #ffca02;
+}
+
+.header_form_wrapper form .submit > div {
+	border: 1px solid #fff;
+	height: 100%;
+	width: 100%;
+	border-radius: 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	font-family: 'Roboto-Bold', Sans-Serif;
+	font-size: 1.5rem;
+}
+
+.header_form_wrapper form .submit > div span {
+	font-size: 1rem;
+}
+
+.header_form_wrapper .arrow_container {
+	position: absolute;
+	top: 17%;
+	right: -2rem;
+	width: 3rem;
+	height: 70%;
+	fill: #fc8043;
+}
+
+.header_form_wrapper .balance {
+	width: 100%;
+	margin: 5% 0;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+.header_form_wrapper .balance span {
+	color: #9dbd39;
+}
+
+.header_form_wrapper .protection {
+	position: absolute;
+	background-color: #eef2f7;
+	border-radius: 0 0 10px 10px;
+	width: calc(90% - 14px);
+	height: 5vh;
+	bottom: 7px;
+	left: 7px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	-ms-align-items: center;
+	align-items: center;
+	color: #666666;
+	padding: 0 5%;
+}
+
+.header_form_wrapper .protection svg{
+	fill: #fc8043;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+/* Общие для секций параметры */
+
+.line {
+	height: 2px;
+	background-color: #7bbf1c;
+	width: 15%;
+	margin-right: 85%;
+	margin-bottom: 5%;
+}
+
+.bold {
+	font-family: 'Roboto-Bold', Sans-Serif;
+	color: #000;
+}
+
+.orange {
+	color: #fa4f01;
+}
+
+.section_title {
+	font-family: 'Roboto-Black', Sans-Serif;
+	font-size: 2.5rem;
+	margin: 2% 0 3% 0;
+}
+
+.conclusion {
+	position: relative;
+	width: 90%;
+	height: 15vh;
+	margin: 5% 5%;
+	padding: 1% 0;
+	border: 2px solid #f4d3bb;
+	border-radius: 10px;
+}
+
+.conclusion svg {
+	position: absolute;
+	width: 15%;
+	height: 6.5vh;
+	background-color: #fff;
+	top: -3.25vh;
+	left: 42.5%;
+	fill: url(#linear-gradient);
+}
+
+.conclusion .text {
+	width: 80%;
+	margin: 6vh 10%;
+	text-align: center;
+	font-size: 1.1rem;
+	color: #9b9e9f;
+}
+
+.conclusion .text span {
+	color: #000;
+}
+
+.section_logo {
+	flex-basis: 100%;
+}
+
+/* Cекция с симптомами */
+
+.symptoms h3 {
+	font-family: 'Roboto-Bold', Sans-Serif;
+	font-size: 1.5rem;
+	margin-bottom: 2%;
+}
+
+.symptoms .symptom {
+	flex-basis: 20%;
+	margin: 0 5%;
+	height: 40vh;
+}
+
+/* Задний фон */
+
+.symptom .symptom_back {
+	position: relative;
+	height: 25vh;
+	width: 100%;
+}
+
+.symptom_back .half_ring {
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	background: url(../img/half_ring.png) no-repeat;
+	-webkit-background-size: 80%;
+	background-size: 80%;
+	width: 25vh;
+	height: 100%;
+}
+
+.symptom_back .dots {
+	position: absolute;
+	z-index: 10;
+	top: 10px;
+	left: 16vh;
+	width: 40px;
+	height: 40px;
+	background-color: #ec5b19;
+	color: #fff;
+	border-radius: 50%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.symptom_back .symptom_img {
+	position: absolute;
+	z-index: 5;
+	top: 13px;
+	left: 13px;
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
+	overflow: hidden;
+	width: 19vh;
+	height: 19vh;
+	border-radius: 50%;
+}
+
+.symptom_back .symptom_one {
+	background: center center url(../img/symptom-1.png) no-repeat;
+}
+.symptom_back .symptom_two {
+	background: center center url(../img/symptom-2.png) no-repeat;
+}
+.symptom_back .symptom_three {
+	background: center center url(../img/symptom-3.png) no-repeat;
+}
+
+.symptom_back .symptom_name {
+	margin-left: 25vh;
+	padding: 5vh 0;
+	height: 15vh;
+	width: 32.5%;
+	text-align: left;
+	font-family: 'Roboto-Bold', Sans-Serif;
+}
+
+/* Остальная часть секции с симптомами  */
+
+.symptom .symptom_effects {
+	text-align: left;
+	color: #444444;
+}
+
+/* Cекция с недостатками прочих средств */
+
+.drug_deficiencies {
+	position: relative;
+	background-color: #f3fafc;
+	padding: 15vh 0;
+	z-index: 5;
+}
+
+.drug_deficiencies:after,
+.drug_deficiencies:before {
+	position: absolute;
+	content: '';
+	background: url(../img/back_down_head.png) no-repeat;
+	z-index: 15;
+	height: 10vh;
+	width: 100%;
+}
+
+.drug_deficiencies:after {
+	bottom: -5px;
+}
+
+.drug_deficiencies:before {
+	top: -5px;
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.drug_deficiencies .section_title {
+	width: 90%;
+	margin: 5vh auto;
+}
+
+/* Столбцы, где описывются недостатки средств */
+
+.drug_deficiencies .drug {
+	flex-basis: 23%;
+	margin: 5% 2.5% 0 2.5%;
+	padding: 0 1% 5% 1%;
+	position: relative;
+	background-color: #fff;
+	border-top: 4px solid #a8c53a;
+	border-radius: 10px;
+}
+
+.drug .circle {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #f3fafc;
+	top: -50px;
+	left: calc(50% - 50px);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.drug .circle svg {
+	fill: #ff6b00;
+	width: 70px;
+	height: 70px;
+}
+
+.drug h3 {
+	font-family: 'Roboto-Bold', Sans-Serif;
+	font-size: 1.2rem;
+}
+
+.drug .drug_title {
+	margin: 70px 0 4% 0;
+}
+
+.drug .title_text {
+	font-family: 'Roboto-Bold', Sans-Serif;
+}
+
+.drug .title_text span {
+	display: block;
+	font-family: 'Roboto-Regular', Sans-Serif;
+	font-style: italic;
+	color: #808080;
+}
+
+.drug .line_arrow {
+	width: 90%;
+	margin: 10% 5%;
+	height: 1px;
+	background-color: #808080;
+	position: relative;
+}
+
+.drug .line_arrow:after,
+.drug .line_arrow:before {
+	position: absolute;
+	content: '';
+	border: 20px solid transparent;
+	top: 0px;
+	left: calc(45% - 5px);
+}
+
+.drug .line_arrow:after {
+	border-top: 12.5px solid #fff;
+	top: -1px;
+}
+
+.drug .line_arrow:before {
+	border-top: 12.5px solid #808080;
+}
+
+.drug .but {
+	color: #ff6b00;
+	margin: 5% 0;
+}
+
+.drug .other_text {
+	color: #808080;
+}
+
+/* Вывод */
+
+.drug_deficiencies .conclusion:after,
+.drug_deficiencies .conclusion:before {
+	position: absolute;
+	width: 15%;
+	height: 10vh;
+	top: -5vh;
+	left: 42.5%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.drug_deficiencies .conclusion:after {
+	content: 'Вывод';
+	background: rgba(247, 253, 254, 0.3);
+	color: #000;
+}
+
+.drug_deficiencies .conclusion:before {
+	content: '!';
+	background-color: #f0f8fa;
+	color: #f4d3bb;
+	font-size: 4rem;
+}
+
+/* Эффективность лекарств */
+.pill_efficacy .section_title {
+	width: 55%;
+	margin: 0 22.5%;
+}
+
+.pill_efficacy .title_text {
+	width: 100%;
+	margin: 2% 0 10vh 0;
+}
+
+.pill_efficacy .treatment_method {
+	flex-basis: 20%;
+	margin: 0 2.5%;
+	padding: 2.5%;
+	border: 4px solid #f64d01;
+	border-radius: 10px;
+	position: relative;
+	z-index: 0;
+}
+
+.pill_efficacy .treatment_method:after,
+.pill_efficacy .treatment_method:before {
+	position: absolute;
+	content: '';
+	width: 100px;
+	height: 100px;
+	left: calc(50% - 50px);
+	border-radius: 50%;
+}
+
+.pill_efficacy .treatment_method:after {
+	width: 92px;
+	height: 92px;
+	left: calc(50% - 46px);
+	top: -46px;
+	background-color: #fff;
+	z-index: 10;
+}
+
+.pill_efficacy .treatment_method:before {
+	top: -50px;
+	background-color: #f64d01;
+	z-index: 5;
+}
+
+.pill_efficacy .back {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	left: 0;
+	top: -54px;
+	background-color: #fff;
+	z-index: 15;
+}
+
+.pill_efficacy .circle {
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	top: -40px;
+	left: calc(50% - 45px);
+	z-index: 20;
+}
+
+.pill_efficacy .circle img {
+	width: 100%;
+}
+
+.pill_efficacy .treatment_method_title {
+	margin: 40px 0 5% 0;
+	font-family: 'Roboto-Bold', Sans-Serif;
+	font-size: 1.3rem;
+}
+
+div.treatment_method.green {
+	border: 4px solid #62bd1f;
+}
+
+div.treatment_method.green:before {
+	background-color: #62bd1f;
+}
+
+.pill_efficacy .gradient_conclusion {
+	background: linear-gradient( to right, rgb(246,77,1), rgb(98,189,31) );
+	height: 15vh;
+	width: 80%;
+	margin: 5% 10% 0 10%;
+	border-radius: 20px;
+	position: relative;
+}
+
+.pill_efficacy .gradient_conclusion div {
+	position: absolute;
+	background-color: #fff;
+	height: calc(15vh - 10px);
+	width: calc(100% - 10px);
+	border-radius: 15px;
+	top: 5px;
+	left: 5px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.pill_efficacy .gradient_conclusion h2 {
+	font-family: 'Roboto-Bold', Sans-Serif;
+	font-size: 1.8rem;
+}
+
+/* Употребление препарата */
+
+.drug_use {
+	background-color: #f0f8f8;
+	position: relative;
+	margin-bottom: 0;
+}
+
+.drug_use:after {
+	position: absolute;
+	content: '';
+	background: url(../img/back_down_head.png) no-repeat;
+	z-index: 15;
+	height: 10vh;
+	width: 100%;
+	top: -5px;
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.drug_use .section_logo {
+	margin-top: 12vh;
+}
+
+.drug_use .content {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	-ms-align-items: center;
+	align-items: center;
+	width: 80%;
+	margin: 5% 10%;
+}
+
+.drug_use .content > div {
+	flex-basis: 40%;
+}
+
+.drug_use .content > div img {
+	width: 100%;
+}
+
+.drug_use .content > .info_list {
+	flex-basis: 35%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	margin-right: 5%;
+}
+
+.drug_use .content > .info_list > li {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	margin: 2.5% 0;
+}
+
+.drug_use .info_list .circle_border {
+	border: 10px solid #ece4d9;
+	background-color: #f64d01;
+	border-radius: 50%;
+	min-width: 120px;
+	height: 120px;
+	position: relative;
+	margin-right: 5%;
+}
+
+.drug_use .info_list .circle_border .icon {
+	background-color: #fff;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.drug_use .info_list .circle_border svg {
+	width: 60px;
+	height: 60px;
+	fill: #f64d01;
+}
+
+.drug_use .text_container {
+	flex-grow: 1;
+	text-align: left;
+}
+
+.drug_use .line {
+	height: 3px;
+	margin-top: 10%;
+}
