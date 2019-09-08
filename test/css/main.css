@@ -1,7 +1,11 @@
-body {
+html {
 	font-family: 'Roboto-Regular', Sans-Serif;
 	color: black;
 	font-size: 16px;
+}
+
+p {
+	font-size: 1rem;
 }
 
 body > svg {
@@ -60,7 +64,7 @@ header > div.background {
 	background: url(../img/back_down_head.png) no-repeat;
 	z-index: 15;
 	height: 15%;
-	top: 85%;
+	bottom: 0;
 }
 
 .back_circle.background {
@@ -113,8 +117,6 @@ header > div.background {
 	position: absolute;
 	padding: 1%;
 	border-radius: 5px;
-	vertical-align: middle;
-	text-align: center;
 }
 
 .tablet_active {
@@ -277,7 +279,7 @@ header > div.background {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 	margin: 6% 0;
 }
 
@@ -337,9 +339,9 @@ header > div.background {
 
 .header_form:before {
 	position: absolute;
-	top: 0;
+	top: -1px;
 	left: 23%;
-	height: 25px;
+	height: 26px;
 	width: 40%;
 	text-align: right;
 	padding: 0 5%;
@@ -635,6 +637,7 @@ header > div.background {
 	font-family: 'Roboto-Bold', Sans-Serif;
 	font-size: 1.5rem;
 	margin-bottom: 2%;
+	flex-basis: 100%;
 }
 
 .symptoms .symptom {
@@ -727,7 +730,7 @@ header > div.background {
 .drug_deficiencies {
 	position: relative;
 	background-color: #f3fafc;
-	padding: 15vh 0;
+	padding: 15vh auto;
 	z-index: 5;
 }
 
