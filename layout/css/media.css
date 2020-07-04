@@ -1,130 +1,150 @@
 @media (max-width: 1230px) {
-    .bg-inner {
-        margin: 0 15px;
+    .title {
+        font-size: 8em;
     }
+
+    .sub-title > * {
+        font-size: 2em;
+    }
+
+    .sign-up {
+        padding: 1em 2em;
     
-
-    header {
-        height: 175px;
+        font-size: 1em;
     }
+
+    .statistic .bg-inner,
+    .partners .bg-inner {
+	    max-width: 904px;  
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-item:nth-child(even) {
+        margin: auto 1em;
+    }
+
+    .email, .phone {
+        font-size: 1em;
+    }
+
+    .response-block {
+        margin: 3em auto 1em auto;
+    }
+
+    .title {
+        font-size: 6em;
+    }
+
+    .sub-title > * {
+        font-size: 1.5em;
+    }
+
+    .sign-up {
+        padding: 1em 2em;
+        margin-bottom: 5em;
     
-    header > .bg-inner > * {
-        margin: 0 10%;
+        font-size: 0.8em;
+
+        width: 60%;
     }
 
-    .menu {
-        order: 1;
-        flex-basis: 80%;
-        
+    .bxslider li {
+        width: 40px;
+        height: 40px;
     }
 
-    .about-restaurent > .bg-inner > * {
-        flex-basis: 80%;
+    .bxslider li img {
+        min-width: 120%;
     }
 
-    .gallery {
+    .statistic .bg-inner,
+    .partners .bg-inner {
+	    max-width: 700px;  
+    }
+
+    .line {
         display: none;
     }
 
-    footer .line {
-        flex-basis: 20%;
-    }
-
-    .copywriter {
-        flex-basis: 50%;
-    }
-
-}
-
-@media (max-width: 1000px) {
-    
-    .below-banner > .bg-inner {
-        margin: 0 10%;
-    }
-
-}
-
-@media (max-width: 800px) {
-    
-    header > .bg-inner > * {
-        margin: 0 5%;
-    }
-
-    .menu {
-        flex-basis: 90%;
-    }
-
-    .banner > .bg-inner {
-        text-align: center;
-    }
-
-    .today-special-colls > * {
-        flex-basis: 90%;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    
-    .phone-number {
-        font-size: 1.4rem;
-    }
-    
-    .ver-line,
-    .bottom-panel-title,
-    .logo-container,
-    header .btn {
-        display: none;
-    }
-
-    header > .bg-inner > * {
-        margin: 0 auto;
-    }
-
-    .menu-list {
+    .statistic .bg-inner {
         flex-wrap: wrap;
-        text-align: center;
+        margin: 5.416666666666667em auto 2em auto;
     }
 
-    .menu-list > * {
-        flex-basis: 30%;
-        margin-bottom: 1rem;
+    .statistic .bg-inner > * {
+        flex-basis: 40%;
+        margin-bottom: 2.5em;
     }
 
-    .menu-list > *:last-child {
+    .statistic-icon {
+        margin-right: 1em;
+    }   
+}
+
+@media (max-width: 425px) {
+    .center-block {
+        flex-wrap: wrap;
+    }
+    
+    .main-content .right-block > * {
+        display: none;
+    }
+
+    .photo-block {
+        display: none;
+    }
+    .bg-inner {
+        min-width: 425px;
+    }
+
+    .left-block {
+        display: none;
+    }
+    
+    .main-content .right-block {
+        display: none;
+    }
+
+    .partners-title-block > * {
+        font-size: 2.5em;
+    }
+
+    .partners-title-block {
+        flex-basis: 90%;
+    }
+
+    .partners-img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    div.bg-inner {
+        min-width: 375px;
+    }
+
+    header div.right-block, header div.center-block{
         flex-basis: 100%;
     }
 
-    .banner-title {
-        font-size: 2.6rem;
+    header {
+        padding-bottom: 100px;
+    }
+
+    header .bg-inner {
+        flex-wrap: wrap;
     }
     
-    .banner-sub-title {
-        font-size: 1.86rem;
-    }
-
-    .below-banner > .bg-inner {
-        margin: 0%;
-    }
-
-    .today-special-colls > * > img {
-        width: 100%;
-    }
-
+   
 }
 
-@media (max-width: 400px) {
+@media (max-width: 320px) {
     
-    footer .line,
-    .below-banner h3 {
-        display: none;
+    div.bg-inner {
+        min-width: 320px;
     }
-
-    .copywriter {
-        flex-basis: 80%;
-    }
-
+    
+   
 }
-
-

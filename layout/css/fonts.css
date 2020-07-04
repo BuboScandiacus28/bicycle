@@ -1,35 +1,38 @@
-/** PlayfairDisplay-Bold **/
+/** FuturaMediumC **/
 @font-face {
-	font-family: 'PlayfairDisplay-Bold';
-	src: url('../fonts/PlayfairDisplay-Bold/PlayfairDisplay-Bold.eot');
-    src: url('../fonts/PlayfairDisplay-Bold/PlayfairDisplay-Bold.eot?iefix') format('eot'), 
-         url('../fonts/PlayfairDisplay-Bold/PlayfairDisplay-Bold.woff') format('woff'),
-		 url('../fonts/PlayfairDisplay-Bold/PlayfairDisplay-Bold.ttf') format('truetype'),
-		 url('../fonts/PlayfairDisplay-Bold/PlayfairDisplay-Bold.svg') format('svg');
-    font-weight: bold;
+	font-family: 'FuturaMediumC';
+	src: url('../fonts/futuramediumc/futuramediumc.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futuramediumc/futuramediumc.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futuramediumc/futuramediumc.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futuramediumc/futuramediumc.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futuramediumc/futuramediumc.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futuramediumc/futuramediumc.svg#futuramediumc') format('svg'); /* Chrome < 4, Legacy iOS */
+	font-weight: bold;
 	font-style: normal;
 }
 
-/** Sintony-Bold **/
+/** FuturaDemiC **/
 @font-face {
-	font-family: 'Sintony-Bold';
-	src: url('../fonts/Sintony-Bold/Sintony-Bold.eot');
-    src: url('../fonts/Sintony-Bold/Sintony-Bold.eot?iefix') format('eot'), 
-         url('../fonts/Sintony-Bold/Sintony-Bold.woff') format('woff'), 
-		 url('../fonts/Sintony-Bold/Sintony-Bold.ttf') format('truetype'), 
-		 url('../fonts/Sintony-Bold/Sintony-Bold.svg') format('svg');
-    font-weight: bold;
+	font-family: 'FuturaDemiC';
+	src: url('../fonts/futurademic/futurademic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futurademic/futurademic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futurademic/futurademic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futurademic/futurademic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futurademic/futurademic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futurademic/futurademic.svg#futurademic') format('svg'); /* Chrome < 4, Legacy iOS */
+	font-weight: bold;
 	font-style: normal;
 }
 
-/** Sintony-Regular **/
+/** FuturaBookC **/
 @font-face {
-	font-family: 'Sintony-Regular';
-	src: url('../fonts/Sintony-Regular/Sintony-Regular.eot');
-    src: url('../fonts/Sintony-Regular/Sintony-Regular.eot?iefix') format('eot'),
-         url('../fonts/Sintony-Regular/Sintony-Regular.woff') format('woff'), 
-		 url('../fonts/Sintony-Regular/Sintony-Regular.ttf') format('truetype'), 
-		 url('../fonts/Sintony-Regular/Sintony-Regular.svg') format('svg');
+	font-family: 'FuturaBookC';
+	src: url('../fonts/futurabookc/futurabookc.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futurabookc/futurabookc.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futurabookc/futurabookc.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futurabookc/futurabookc.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futurabookc/futurabookc.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futurabookc/futurabookc.svg#futurabookc') format('svg'); /* Chrome < 4, Legacy iOS */
 	font-weight: normal;
 	font-style: normal;
 }
