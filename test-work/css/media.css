@@ -1,0 +1,150 @@
+@media (max-width: 1230px) {
+    .title {
+        font-size: 8em;
+    }
+
+    .sub-title > * {
+        font-size: 2em;
+    }
+
+    .sign-up {
+        padding: 1em 2em;
+    
+        font-size: 1em;
+    }
+
+    .statistic .bg-inner,
+    .partners .bg-inner {
+	    max-width: 904px;  
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-item:nth-child(even) {
+        margin: auto 1em;
+    }
+
+    .email, .phone {
+        font-size: 1em;
+    }
+
+    .response-block {
+        margin: 3em auto 1em auto;
+    }
+
+    .title {
+        font-size: 6em;
+    }
+
+    .sub-title > * {
+        font-size: 1.5em;
+    }
+
+    .sign-up {
+        padding: 1em 2em;
+        margin-bottom: 5em;
+    
+        font-size: 0.8em;
+
+        width: 60%;
+    }
+
+    .bxslider li {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bxslider li img {
+        min-width: 120%;
+    }
+
+    .statistic .bg-inner,
+    .partners .bg-inner {
+	    max-width: 700px;  
+    }
+
+    .line {
+        display: none;
+    }
+
+    .statistic .bg-inner {
+        flex-wrap: wrap;
+        margin: 5.416666666666667em auto 2em auto;
+    }
+
+    .statistic .bg-inner > * {
+        flex-basis: 40%;
+        margin-bottom: 2.5em;
+    }
+
+    .statistic-icon {
+        margin-right: 1em;
+    }   
+}
+
+@media (max-width: 425px) {
+    .center-block {
+        flex-wrap: wrap;
+    }
+    
+    .main-content .right-block > * {
+        display: none;
+    }
+
+    .photo-block {
+        display: none;
+    }
+    .bg-inner {
+        min-width: 425px;
+    }
+
+    .left-block {
+        display: none;
+    }
+    
+    .main-content .right-block {
+        display: none;
+    }
+
+    .partners-title-block > * {
+        font-size: 2.5em;
+    }
+
+    .partners-title-block {
+        flex-basis: 90%;
+    }
+
+    .partners-img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    div.bg-inner {
+        min-width: 375px;
+    }
+
+    header div.right-block, header div.center-block{
+        flex-basis: 100%;
+    }
+
+    header {
+        padding-bottom: 100px;
+    }
+
+    header .bg-inner {
+        flex-wrap: wrap;
+    }
+    
+   
+}
+
+@media (max-width: 320px) {
+    
+    div.bg-inner {
+        min-width: 320px;
+    }
+    
+   
+}
