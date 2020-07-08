@@ -7,8 +7,8 @@ $(document).ready(function () {
         slideMargin: 30,
         controls: true,
         responsive: false,
-        prevText: '<i class="fas fa-arrow-up fa-2x"></i>',
-        nextText: '<i class="fas fa-arrow-down fa-2x"></i>',
+        prevText: '<img src="./img/arrow-slider.svg" alt="стрелка слайдера">',
+        nextText: '<img src="./img/arrow-slider.svg" alt="стрелка слайдера">',
         prevSelector: $('.carousel-prev'),
         nextSelector: $('.carousel-next'),
         minSlides: 3,
@@ -16,6 +16,10 @@ $(document).ready(function () {
     });
 
     $('.bxslider li').click(function(event){
+        $('.bxslider > .selected').toggleClass('selected');
+        
+        $(this).toggleClass('selected');
+        
         let img = '#'+$(this).data('img');
         
         $('.photo-block > *').not('.disabled').toggleClass('disabled');

@@ -6,7 +6,7 @@
 	<title>Luxury Restaurant</title>
 	<link rel="stylesheet" href="css/fonts.css">
 
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+	<link href="./libs/select2/css/select2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="libs/bxslider/dist/jquery.bxslider.min.css" />
 
 	<link rel="stylesheet" href="css/main.css">
@@ -58,9 +58,9 @@
 
 			<div class="left-block">
 				<ul class="contacts-list">
-					<li class="contacts-item"><a href="#"><i class="fab fa-facebook-f fa-3x"></i></a></li>
-					<li class="contacts-item"><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
-					<li class="contacts-item"><a href="#"><i class="fab fa-youtube fa-3x"></i></a></li>
+					<li class="contacts-item"><a href="#"><img src="./img/facebook.svg" alt="facebook"></a></li>
+					<li class="contacts-item"><a href="#"><img src="./img/instagram.svg" alt="instagram"></i></a></li>
+					<li class="contacts-item"><a href="#"><img src="./img/youtube.svg" alt="youtube"></i></a></li>
 				</ul>
 			</div>
 
@@ -78,8 +78,7 @@
 						<h2>Школа програмування</h2>
 						<h2>Ефективна та неформальна IT освiта</h2>
 					</div>
-					<a href="№" class="sign-up uppercase">Вивчити програмування <i
-							class="fas fa-long-arrow-alt-right"></i></a>
+					<a href="№" class="sign-up uppercase">Вивчити програмування <img src="./img/arrow.svg" alt="стрелка"></a>
 				</div>
 
 				<div class="photo-block">
@@ -95,18 +94,18 @@
 				<div class="carousel-prev"></div>
 
 				<ul class="bxslider">
-					<li data-img="stud-1"><img src="./img/stud-1.png" /></li>
-					<li data-img="stud-2"><img src="./img/stud-2.png" /></li>
-					<li data-img="stud-3"><img src="./img/stud-3.png" /></li>
-					<li data-img="stud-1"><img src="./img/stud-1.png" /></li>
-					<li data-img="stud-2"><img src="./img/stud-2.png" /></li>
-					<li data-img="stud-3"><img src="./img/stud-3.png" /></li>
-					<li data-img="stud-1"><img src="./img/stud-1.png" /></li>
-					<li data-img="stud-2"><img src="./img/stud-2.png" /></li>
-					<li data-img="stud-3"><img src="./img/stud-3.png" /></li>
-					<li data-img="stud-1"><img src="./img/stud-1.png" /></li>
-					<li data-img="stud-2"><img src="./img/stud-2.png" /></li>
-					<li data-img="stud-3"><img src="./img/stud-3.png" /></li>
+					<li data-img="stud-1" class = "selected"><div class="li-wrapper"><img src="./img/stud-1.png" /></div></li>
+					<li data-img="stud-2"><div class="li-wrapper"><img src="./img/stud-2.png" /></div></li>
+					<li data-img="stud-3"><div class="li-wrapper"><img src="./img/stud-3.png" /></div></li>
+					<li data-img="stud-1"><div class="li-wrapper"><img src="./img/stud-1.png" /></div></li>
+					<li data-img="stud-2"><div class="li-wrapper"><img src="./img/stud-2.png" /></div></li>
+					<li data-img="stud-3"><div class="li-wrapper"><img src="./img/stud-3.png" /></div></li>
+					<li data-img="stud-1"><div class="li-wrapper"><img src="./img/stud-1.png" /></div></li>
+					<li data-img="stud-2"><div class="li-wrapper"><img src="./img/stud-2.png" /></div></li>
+					<li data-img="stud-3"><div class="li-wrapper"><img src="./img/stud-3.png" /></div></li>
+					<li data-img="stud-1"><div class="li-wrapper"><img src="./img/stud-1.png" /></div></li>
+					<li data-img="stud-2"><div class="li-wrapper"><img src="./img/stud-2.png" /></div></li>
+					<li data-img="stud-3"><div class="li-wrapper"><img src="./img/stud-3.png" /></div></li>
 				</ul>
 				
 				<div class="carousel-next"></div>
@@ -167,16 +166,29 @@
 					<h2>Друзі</h2>
 				</div>
 
-				<img src="./img/partners-1.png" alt="" class="partners-img">
-				<img src="./img/partners-2.png" alt="" class="partners-img">
+				<div class="partnerns-block">
+					<img src="./img/google.png" alt="лого компании google">
+					<img src="./img/enguide.png" alt="лого компании enguide">
+				</div>
+				<div class="partnerns-block">
+					<img src="./img/apple.png" alt="лого компании apple">
+					<img src="./img/lingva.png" alt="лого компании lingva">
+				</div>
+				<div class="partnerns-block">
+					<img src="./img/m.png" alt="лого компании m">
+					<img src="./img/english-school.png" alt="лого компании english-school">
+				</div>
+				<div class="partnerns-block">
+					<img src="./img/enguide.png" alt="лого компании enguide">
+					<img src="./img/ralabs.png" alt="лого компании ralabs">
+				</div>
 			</div>
 		</div>
 
 	<!-- ./partners -->
 
 	<script src="./libs/jQuery/jquery-3.5.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-	<script src="https://kit.fontawesome.com/915c3bdb34.js" crossorigin="anonymous"></script>
+	<script src="./libs/select2/js/select2.min.js"></script>
 	<script src="./libs/bxslider/dist/jquery.bxslider.min.js"></script>
 	<script src="js/main.js"></script>
 
