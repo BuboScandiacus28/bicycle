@@ -146,7 +146,11 @@ header {
 
 .menu-list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+}
+
+.menu-list > * {
+	flex-basis: 30%;
 }
 
 .menu-item:nth-child(even) {

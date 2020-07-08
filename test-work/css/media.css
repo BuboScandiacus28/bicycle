@@ -36,7 +36,7 @@
 @media (max-width: 768px) {
 
     .menu-item:nth-child(even) {
-        margin: auto 1em;
+        margin: auto 0.5em;
     }
 
     .email, .phone {
