@@ -27,3 +27,8 @@ $(document).ready(function () {
         $(img).toggleClass('disabled');
     });
 });
+
+$(function() {
+	$(".loaderInner").fadeOut(); 
+	$(".loader").delay(400).fadeOut("slow"); 
+});
