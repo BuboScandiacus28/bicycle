@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .left-block,
 .right-block {
-	flex-basis: 7.083333333%;
+	flex-basis: 8.333333333333333em;
 }
 
 .left-block {

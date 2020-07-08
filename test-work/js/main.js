@@ -29,6 +29,6 @@ $(document).ready(function () {
 });
 
 $(function() {
-	$(".loaderInner").fadeOut(); 
-	$(".loader").delay(400).fadeOut("slow"); 
+	$(".loaderInner").delay(400).fadeOut(); 
+	$(".loader").delay(800).fadeOut("slow"); 
 });

@@ -1,4 +1,9 @@
 @media (max-width: 1230px) {
+    .left-block,
+    .right-block {
+        flex-basis: 6em;
+    }
+    
     .title {
         font-size: 8em;
     }
@@ -54,8 +59,18 @@
         height: 40px;
     }
 
+    .li-wrapper {
+        width: 38px;
+        height: 38px;
+    }
+
     .bxslider li img {
         min-width: 120%;
+    }
+
+    .selected::after {
+        width: 8px;
+        height: 8px;
     }
 
     .statistic .bg-inner,
@@ -79,7 +94,14 @@
 
     .statistic-icon {
         margin-right: 1em;
-    }   
+    } 
+    
+    .partnerns-block {
+        flex-basis: 50%;
+
+        margin: 2.5em auto;
+    }
+    
 }
 
 @media (max-width: 425px) {
@@ -116,6 +138,10 @@
 
     .partners-img {
         width: 80%;
+    }
+
+    .partnerns-block {
+        flex-basis: 90%;
     }
 }
 
