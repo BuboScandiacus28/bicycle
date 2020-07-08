@@ -138,7 +138,7 @@
 
     
     .bg-inner {
-        min-width: 425px;
+        max-width: 425px;
     }
 
     .left-block {
@@ -165,7 +165,7 @@
 @media (max-width: 375px) {
     
     div.bg-inner {
-        min-width: 375px;
+        max-width: 375px;
     }
 
     header div.right-block, header div.center-block{
@@ -186,7 +186,7 @@
 @media (max-width: 320px) {
     
     div.bg-inner {
-        min-width: 320px;
+        max-width: 320px;
     }
     
    
