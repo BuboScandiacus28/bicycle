@@ -15,20 +15,47 @@ $(document).ready(function () {
         pager: false,
     });
 
-    $('.bxslider li').click(function(event){
+    $('.bxslider li').click(function (event) {
         $('.bxslider > .selected').toggleClass('selected');
-        
+
         $(this).toggleClass('selected');
-        
-        let img = '#'+$(this).data('img');
-        
+
+        let img = '#' + $(this).data('img');
+
         $('.photo-block > *').not('.disabled').toggleClass('disabled');
 
         $(img).toggleClass('disabled');
     });
+
+    $('.statistic-number-anim').each(function () {
+        let $this = $(this),
+            countTo = $this.attr('data-count');
+
+        $({
+            countNum: $this.text()
+        }).animate({
+                countNum: countTo
+            },
+
+            {
+
+                duration: 3000,
+                easing: 'linear',
+                step: function () {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                    $this.text(this.countNum);
+                }
+
+            });
+
+    });
+
+
 });
 
-$(function() {
-	$(".loaderInner").delay(400).fadeOut(); 
-	$(".loader").delay(800).fadeOut("slow"); 
+$(function () {
+    $(".loaderInner").delay(400).fadeOut();
+    $(".loader").delay(800).fadeOut("slow");
 });
