@@ -28,29 +28,8 @@
     }
 
     .statistic .bg-inner,
-    .partners .bg-inner,
-    .description .bg-inner {
+    .partners .bg-inner {
 	    max-width: 904px;  
-    }
-
-    .description-step-number {
-        font-size: 10rem;
-    }
-
-    .description-step-wrapper {
-        margin-bottom: 30%;
-    }
-    
-    .description-step-wrapper > *:nth-child(1) {
-        margin-top: 3rem;
-    }
-    
-    .description-step-wrapper > *:nth-last-child(1) {
-        margin-bottom: 6rem;
-    }
-    
-    .description-step-inverted div.description-step-wrapper {
-        margin-top: 55%;
     }
 }
 
@@ -105,8 +84,7 @@
     }
 
     .statistic .bg-inner,
-    .partners .bg-inner,
-    .description .bg-inner {
+    .partners .bg-inner {
 	    max-width: 700px;  
     }
 
