@@ -1,5 +1,5 @@
 @media (max-width: 1230px) {
-    
+
     header .center-block {
         flex-wrap: wrap;
     }
@@ -7,30 +7,30 @@
     header .center-block .menu {
         flex-basis: 90%;
     }
-    
+
     .left-block,
     .right-block {
         flex-basis: 6em;
     }
-    
+
     .title {
         font-size: 8em;
     }
 
-    .sub-title > * {
+    .sub-title>* {
         font-size: 2em;
     }
 
     .sign-up {
         padding: 1em 2em;
-    
+
         font-size: 1em;
     }
 
     .statistic .bg-inner,
     .partners .bg-inner,
     .description .bg-inner {
-	    max-width: 904px;  
+        max-width: 904px;
     }
 
     .description-step-number {
@@ -40,15 +40,15 @@
     .description-step-wrapper {
         margin-bottom: 30%;
     }
-    
-    .description-step-wrapper > *:nth-child(1) {
+
+    .description-step-wrapper>*:nth-child(1) {
         margin-top: 3rem;
     }
-    
-    .description-step-wrapper > *:nth-last-child(1) {
+
+    .description-step-wrapper>*:nth-last-child(1) {
         margin-bottom: 6rem;
     }
-    
+
     .description-step-inverted div.description-step-wrapper {
         margin-top: 55%;
     }
@@ -60,7 +60,8 @@
         margin: auto 0.5em;
     }
 
-    .email, .phone {
+    .email,
+    .phone {
         font-size: 1em;
     }
 
@@ -72,14 +73,14 @@
         font-size: 6em;
     }
 
-    .sub-title > * {
+    .sub-title>* {
         font-size: 1.5em;
     }
 
     .sign-up {
         padding: 1em 2em;
         margin-bottom: 5em;
-    
+
         font-size: 0.8em;
 
         width: 60%;
@@ -107,12 +108,12 @@
     .statistic .bg-inner,
     .partners .bg-inner,
     .description .bg-inner {
-	    max-width: 700px;  
+        max-width: 700px;
     }
 
     .line {
         height: 1px;
-	    width: 5em;
+        width: 5em;
     }
 
     .statistic .bg-inner {
@@ -120,32 +121,70 @@
         margin: 5.416666666666667em auto 2em auto;
     }
 
-    .statistic .bg-inner > * {
+    .statistic .bg-inner>* {
         flex-basis: 80%;
         margin-bottom: 4em;
     }
 
     .statistic-icon {
         margin-right: 1em;
-    } 
-    
+    }
+
     .partnerns-block {
         flex-basis: 50%;
 
         margin: 2.5em auto;
     }
+
+    .description-step-number {
+        font-size: 8rem;
+    }
+
+    .description-title {
+        font-size: 2rem;
+    }
+
+    .description-step {
+        flex-basis: 40%;
     
+        margin: 5% 5%;
+    }
+
+    .description-step-inverted div.description-step-wrapper {
+        margin-top: 30%;
+    }
+
 }
 
 @media (max-width: 700px) {
     .main-content .center-block {
         margin-right: 6em;
     }
+
     .main-content .right-block {
         display: none;
     }
+
     .photo-block {
         display: none;
+    }
+
+    .description-step {
+        flex-basis: 80%;
+    
+        margin: 5% 10%;
+    }
+
+    .description-step-inverted div.description-step-wrapper {
+        margin-top: 22%;
+    }
+
+    .description-step-wrapper {
+        margin-bottom: 20%;
+    }
+
+    .description-step-wrapper>*:nth-child(1) {
+        margin-top: 4rem;
     }
 }
 
@@ -153,12 +192,12 @@
     .main-content .center-block {
         margin-right: 0px;
     }
-    
-    .main-content .right-block > * {
+
+    .main-content .right-block>* {
         display: none;
     }
 
-    
+
     .bg-inner {
         max-width: 425px;
     }
@@ -167,7 +206,7 @@
         display: none;
     }
 
-    .partners-title-block > * {
+    .partners-title-block>* {
         font-size: 2.5em;
     }
 
@@ -182,15 +221,24 @@
     .partnerns-block {
         flex-basis: 90%;
     }
+
+    .description-title {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 375px) {
-    
+
+    .main-content {
+        margin-top: 250px;
+    }
+
     div.bg-inner {
         max-width: 375px;
     }
 
-    header div.right-block, header div.center-block{
+    header div.right-block,
+    header div.center-block {
         flex-basis: 100%;
     }
 
@@ -201,15 +249,13 @@
     header .bg-inner {
         flex-wrap: wrap;
     }
-    
-   
 }
 
 @media (max-width: 320px) {
-    
+
     div.bg-inner {
         max-width: 320px;
     }
-    
-   
+
+
 }
