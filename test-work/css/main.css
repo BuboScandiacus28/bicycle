@@ -453,9 +453,9 @@ header {
 
 	font-size: 15rem;
 
-	background: linear-gradient(to bottom, rgba(228, 228, 228, 1), rgb(250, 250, 250), rgba(255, 255, 255, 1)); /* Градиент для текста */
-    -webkit-background-clip: text; /* Обрезаем фон по тексту */
-    -webkit-text-fill-color: transparent; /* Прозрачный текст */
+	background: linear-gradient(to bottom, rgba(228, 228, 228, 1), rgb(250, 250, 250), rgba(255, 255, 255, 1)); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .description-step-wrapper {
