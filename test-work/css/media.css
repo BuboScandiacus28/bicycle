@@ -170,9 +170,9 @@
     }
 
     .description-step {
-        flex-basis: 80%;
+        flex-basis: 60%;
     
-        margin: 5% 10%;
+        margin: 5% 20%;
     }
 
     .description-step-inverted div.description-step-wrapper {
@@ -196,8 +196,7 @@
     .main-content .right-block>* {
         display: none;
     }
-
-
+    
     .bg-inner {
         max-width: 425px;
     }
@@ -220,6 +219,12 @@
 
     .partnerns-block {
         flex-basis: 90%;
+    }
+
+    .description-step {
+        flex-basis: 80%;
+    
+        margin: 5% 10%;
     }
 
     .description-title {
