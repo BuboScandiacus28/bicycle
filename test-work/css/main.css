@@ -169,6 +169,10 @@ header {
 	border-bottom: 1px solid #E9E9E9;	
 }
 
+header .logo-mobile {
+	display: none;
+}
+
 .logo-container {
 	height: 2.75em;
 	width: 3.25em;
@@ -243,7 +247,7 @@ header {
 	justify-content: flex-start;
 	align-items: center;
 
-	margin: 9.583333333333333em auto 1.8em auto;
+	margin: 2em auto 1.8em auto;
 }
 
 .response-text {
