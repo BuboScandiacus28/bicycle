@@ -181,6 +181,7 @@ header .logo-mobile {
 .menu-list {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .menu-list > * {
