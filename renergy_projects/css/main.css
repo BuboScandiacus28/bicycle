@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 	header	
 ============= */
 
-header {
+.sn_cap_of_website {
     color: #fff;
 
     background-image: url(./../img/header.jpg);
@@ -80,26 +80,29 @@ header {
     padding: 7.25rem 0 7.8rem 0;
 }
 
-header .bg_inner {
+.sn_cap_of_website .bg_inner {
     flex-direction: column;
     justify-content: flex-start;
-
-    margin: 0 19.4%;
 }
 
-.header_sub_title {
+.sn_cap_of_website .bg_inner > * {
+    margin: auto 9rem;
+}
+
+.sn_cap_of_website_sub_title {
     font-size: 0.97rem;
     letter-spacing: -0.03rem;
 }
 
-.header_title {
+.sn_cap_of_website .sn_cap_of_website_title {
     font-size: 3.9rem;
     letter-spacing: -0.25rem;
 
-    margin: 0.3rem 0 1.4rem 0;
+    margin-top: 0.3rem;
+    margin-bottom: 1.4rem;
 }
 
-.header_block {
+.sn_cap_of_website_block {
     position: relative;
 
     height: 4px;
@@ -108,7 +111,7 @@ header .bg_inner {
     background-color: #0d73fc;
 }
 
-.header_block::before {
+.sn_cap_of_website_block::before {
     content: '';
 
     position: absolute;
@@ -125,8 +128,9 @@ header .bg_inner {
 	sn_article	
 ============= */
 
-.sn_article .bg_inner {
-    margin: 0 21rem;
+.sn_article .bg_inner > * {
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
 }
 
 .sn_article_sub_title {
@@ -143,13 +147,18 @@ header .bg_inner {
 }
 
 .sn_article p.sn_article_sub_text {
-    flex-basis: 58%;
+    flex-basis: 45%;
     
     font-size: 1rem;
     line-height: 1.9rem;
     letter-spacing: 0.0015rem;
 
-    margin: 0 21% 6.9rem 21%;
+    margin: 0 27.5% 6.9rem 27.5%;
+}
+
+.sn_article_blocks_art_line {
+    display: flex;
+    justify-content: center;
 }
 
 .sn_article div.sn_article_block_art {
@@ -213,7 +222,7 @@ header .bg_inner {
 }
 
 .sn_article a.sn_article_contact_href {
-    padding: 0.69rem 2rem;
+    padding: 0.69rem 1.4rem;
     margin: 5.16rem auto 4.6rem auto;
 
     border: 2px solid #0d73fc;
@@ -234,10 +243,6 @@ header .bg_inner {
     background-color: #eef2f5;
 
     position: relative;
-}
-
-.sn_partners .bg_inner {
-    margin: 0 19.5%;
 }
 
 .sn_partners_block_bg {
@@ -263,11 +268,19 @@ header .bg_inner {
     letter-spacing: -0.1rem;
 }
 
-.sn_partners div.sn_partners_company_logo_container {
-    flex-basis: 15%;
+.sn_partners_company_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    margin: 4rem 1%;
-    padding: 0 0.5%;
+    margin-left: 11rem;
+    margin-right: 9.2rem;
+}
+
+.sn_partners li.sn_partners_company_logo_container {
+    flex-basis: 22%;
+
+    margin: 3.79rem 1.5%;
 
     display: flex;
     align-items: center;

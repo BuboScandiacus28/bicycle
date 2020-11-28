@@ -1,50 +1,69 @@
-let lib = () => {
-    let script = document.getElementById('my_lib');
-    let src_to_img = script.getAttribute('data-src-to-img');
-    let body = document.body;
-    
+let drawImg = (src, id) => {
     let img = document.createElement('img');
 
-    img.setAttribute('src', src_to_img);
-    img.setAttribute('id', 'img_to_desktop');
+    img.setAttribute('src', src);
+    img.setAttribute('id', id);
 
-    body.style.position = 'response';
-    body.style.zIndex = '1';
+    img.style.cssText = `   
+        position: absolute;
+        zIndex: 9998;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: auto;
+        opacity: 0.3;
+        display: none;
+    `;
 
-    img.style.position = 'absolute';
-    img.style.zIndex = '9998';
-    img.style.top = '0';
-    img.style.left = '50%';
-    img.style.transform = 'translate(-50%, 0)';
-    img.style.margin = 'auto';
-    img.style.opacity = '0.3';
-
-    body.appendChild(img);
+    document.body.appendChild(img);
 
     img.addEventListener('click', (e) => {
         e.currentTarget.style.display = 'none';
     });
+}
 
+let drawBtn = (text, indent) => {
     let btn = document.createElement('button');
 
-    btn.style.position = 'fixed';
-    btn.style.zIndex = '9999';
-    btn.style.color = '#fff';
-    btn.style.backgroundColor = '#0d73fc';
-    btn.style.padding = '15px 30px';
-    btn.style.bottom = '50px';
-    btn.style.right = '25px';
-    btn.style.borderRadius = '15px';
-    btn.style.border = '0px';
+    btn.style.cssText = `   
+        position: fixed;
+        z-index: 9999;
+        color: #fff;
+        background-color: #0d73fc;
+        padding: 15px 30px;
+        bottom: 50px;
+        right: ${indent}px;
+        border-radius: 15px;
+        border: 0px;
+    `;
 
-    btn.textContent = 'Наложить макет';
+    btn.textContent = text;
 
-    body.appendChild(btn);
+    document.body.appendChild(btn);
 
     btn.addEventListener('click', () => {
-        document.getElementById('img_to_desktop').style.display = 'block';
+        document.getElementById(text).style.display = 'block';
+    });
+
+    return btn.offsetWidth + 25;
+}
+
+let lib = () => {
+    let script = document.getElementById('my_lib');
+    let arr_imgs = script.getAttribute('data-src-to-imgs').split(',');
+    let arr_btns_description = script.getAttribute('data-btns-description').split(',');
+    let indent = 25;
+
+    document.body.style.position = 'response';
+    document.body.style.zIndex = '1';
+
+    arr_imgs.forEach((item, index) => {
+        drawImg(item, arr_btns_description[index]);
+    });
+
+    arr_btns_description.forEach((item) => {
+        indent += drawBtn(item, indent);
     });
 }
 
 lib();
-
