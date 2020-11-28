@@ -6,13 +6,6 @@
 body {
 	font-family: 'HeeboRegular', sans-serif;
 	font-size: 12px;
-
-	margin: 0 auto;
-}
-
-body > * {
-	display: flex;
-	justify-content: center;	
 }
 
 img {
@@ -29,11 +22,6 @@ a {
     font-family: 'HeeboBold', serif;
 }
 
-section,
-header {
-    padding: 4rem 0;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'HeeboBold', serif;
 }
@@ -42,76 +30,67 @@ h1, h2, h3, h4, h5, h6 {
 	other	
 ============= */
 
-.bg_inner {
-	max-width: 1440px;
-	width: 100%;
-	height: 100%;
+.container {
+	max-width: 1200px;
+    width: 100%;
+    
+    box-sizing: border-box;
 
-	display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+    margin: 0 auto;
+    padding: 0 16px;
 
-.bg_inner > * {
-	min-height: 100%;
+    text-align: center;
 }
 
 .blue {
 	color: #0d73fc;
 }
-.sn_article .bg_inner > *,
-.sn_partners .bg_inner > * {
-    flex-basis: 100%;
-
-    text-align: center;
-}
 
 /* =============
-	header	
+	.head	
 ============= */
 
-.sn_cap_of_website {
+.head {
     color: #fff;
 
     background-image: url(./../img/header.jpg);
     background-size: cover;
     background-position: center;
 
-    padding: 7.25rem 0 7.8rem 0;
+    padding: 6.1rem 0 6.5rem 0;
 }
 
-.sn_cap_of_website .bg_inner {
-    flex-direction: column;
-    justify-content: flex-start;
+.head__row {
+    max-width: 81.5%;
+    width: 100%;
+
+    margin: 0 auto;
+
+    text-align: left;
 }
 
-.sn_cap_of_website .bg_inner > * {
-    margin: auto 9rem;
-}
-
-.sn_cap_of_website_sub_title {
-    font-size: 0.97rem;
+.head__subtitle {
+    font-size: 0.8rem;
     letter-spacing: -0.03rem;
 }
 
-.sn_cap_of_website .sn_cap_of_website_title {
-    font-size: 3.9rem;
-    letter-spacing: -0.25rem;
+.head__title {
+    font-size: 3.2rem;
+    letter-spacing: -0.2rem;
 
-    margin-top: 0.3rem;
-    margin-bottom: 1.4rem;
+    margin: 0.3rem 0 1.1rem 0;
 }
 
-.sn_cap_of_website_block {
+.head__figure {
     position: relative;
 
     height: 4px;
-    width: 4.25rem;
+    width: 3.3rem;
 
     background-color: #0d73fc;
 }
 
-.sn_cap_of_website_block::before {
+.head__figure::before {
     content: '';
 
     position: absolute;
@@ -119,54 +98,52 @@ h1, h2, h3, h4, h5, h6 {
     right: -1.4rem;
     
     height: 4px;
-    width: 1.2rem;
+    width: 1rem;
 
     background-color: #fff;
 }
 
 /* =============
-	sn_article	
+	short-project-discription	
 ============= */
 
-.sn_article .bg_inner > * {
-    margin-left: 7.5rem;
-    margin-right: 7.5rem;
+.short-project-discription__subtitle {
+    letter-spacing: -0.02rem;
+    font-size: 0.7rem;
+
+    margin-top: 7.4rem;
 }
 
-.sn_article_sub_title {
-    margin-top: 5rem;
+.short-project-discription__title {
+    font-size: 2.2rem;
+    letter-spacing: -0.12rem;
 
-    letter-spacing: -0.03rem;
+    margin: 0.51rem 0 0.65rem 0;
 }
 
-.sn_article_title {
-    font-size: 2.65rem;
-    letter-spacing: -0.145rem;
+.short-project-discription__description {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.015rem;
 
-    margin: 0.50rem 0 0.75rem 0;
+    margin: 0 27% 5.6rem 27%;
 }
 
-.sn_article p.sn_article_sub_text {
-    flex-basis: 45%;
-    
-    font-size: 1rem;
-    line-height: 1.9rem;
-    letter-spacing: 0.0015rem;
+/* =============
+	articles	
+============= */
 
-    margin: 0 27.5% 6.9rem 27.5%;
-}
-
-.sn_article_blocks_art_line {
+.articles__row {
     display: flex;
     justify-content: center;
 }
 
-.sn_article div.sn_article_block_art {
-    flex-basis: 31%;
+.article {
+    flex-basis: 26.5%;
 
     margin: 1% 1% 1.5% 1%;
 
-    height: 26.2rem;
+    height: 21.8rem;
 
     background-size: cover;
 
@@ -174,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: flex-end;
 }
 
-.sn_article_block_description {
+.article__block-description {
     background-color: #fff;
 
     flex-basis: 95%;
@@ -188,99 +165,101 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
 }
 
-.sn_article_art_title {
+.article__title {
     text-align: left;
 
     margin-top: 2.1rem;
 
-    font-size: 1.2rem;
-    letter-spacing: -0.09rem;
-    line-height: 1.4rem;
+    font-size: 1rem;
+    letter-spacing: -0.07rem;
+    line-height: 1.07rem;
 }
 
-.sn_article_art_href {
+.article__link {
     position: relative;
 
-    margin: 0.5rem 0 2.35rem 0;
+    margin: 0.5rem 0 1.9rem 0;
 
-    font-size: 0.9rem;
-    letter-spacing: 0.014rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.01rem;
 }
 
-.sn_article_art_href::after {
+.article__link::after {
     content: '';
 
     position: absolute;
 
     top: 55%;
-    right: -3.8rem;
+    right: -3rem;
 
-    width: 3rem;
+    width: 2.7rem;
     height: 1px;
 
     background-color: #0d73fc;
 }
 
-.sn_article a.sn_article_contact_href {
-    padding: 0.69rem 1.4rem;
-    margin: 5.16rem auto 4.6rem auto;
+.articles__contact-now {
+    display: block;
+
+    padding: 0.6rem 2.1rem;
+    margin: 4rem auto 11.35rem auto;
 
     border: 2px solid #0d73fc;
 
-    flex-basis: 9%;
+    width: max-content;
 
-    font-size: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.01rem;
 }
 
 /* =============
-	sn_partners	
+	partners	
 ============= */
 
-.sn_partners {
-    margin-top: 5rem;
-    padding-top: 7rem;
+.partners {
+    margin-top: 3rem;
 
     background-color: #eef2f5;
 
     position: relative;
 }
 
-.sn_partners_block_bg {
+.partners__block-bg {
     position: absolute;
 
     left: 0;
-    top: -4.3rem;
+    top: -3.8rem;
 
     width: 50%;
-    height: 4.3rem;
+    height: 3.8rem;
 
     background-color: #eef2f5;
 }
 
-.sn_partners_sub_title {
-    margin: 2rem 0 0.55rem 0;
+.partners__sub-title {
+    padding: 7.3rem 0 0.5rem 0;
 
-    letter-spacing: -0.05rem;
+    font-size: 0.75rem;
+    letter-spacing: -0.04rem;
 }
 
-.sn_partners_title {
-    font-size: 2.55rem;
-    letter-spacing: -0.1rem;
+.partners__title {
+    font-size: 2.2rem;
+    letter-spacing: -0.12rem;
 }
 
-.sn_partners_company_list {
+.partners-list {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-left: 11rem;
-    margin-right: 9.2rem;
+    margin: 0 6.7rem 0 8rem;
 }
 
-.sn_partners li.sn_partners_company_logo_container {
-    flex-basis: 22%;
+.partners-list__item {
+    flex-basis: 20%;
 
-    margin: 3.79rem 1.5%;
+    margin: 2.8rem 2% 7rem 2%;
 
     display: flex;
     align-items: center;

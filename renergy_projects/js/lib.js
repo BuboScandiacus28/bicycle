@@ -13,6 +13,7 @@ let drawImg = (src, id) => {
         margin: auto;
         opacity: 0.3;
         display: none;
+        width: 1200px;
     `;
 
     document.body.appendChild(img);
@@ -52,6 +53,7 @@ let lib = () => {
     let script = document.getElementById('my_lib');
     let arr_imgs = script.getAttribute('data-src-to-imgs').split(',');
     let arr_btns_description = script.getAttribute('data-btns-description').split(',');
+    let enabled_layot_id = script.getAttribute('data-enabled-layot');
     let indent = 25;
 
     document.body.style.position = 'response';
@@ -64,6 +66,8 @@ let lib = () => {
     arr_btns_description.forEach((item) => {
         indent += drawBtn(item, indent);
     });
+
+    if (enabled_layot_id) document.getElementById(enabled_layot_id).style.display = 'block';
 }
 
 lib();
