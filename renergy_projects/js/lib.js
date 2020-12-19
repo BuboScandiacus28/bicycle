@@ -50,7 +50,7 @@ let drawBtn = (text, indent) => {
 }
 
 let lib = () => {
-    let script = document.getElementById('my_lib');
+    let script = document.getElementById('pixelPerfectLib');
     let arr_imgs = script.getAttribute('data-src-to-imgs').split(',');
     let arr_btns_description = script.getAttribute('data-btns-description').split(',');
     let enabled_layot_id = script.getAttribute('data-enabled-layot');

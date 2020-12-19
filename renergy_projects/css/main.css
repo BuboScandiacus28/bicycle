@@ -5,7 +5,8 @@
 
 body {
 	font-family: 'HeeboRegular', sans-serif;
-	font-size: 12px;
+    font-size: 12px;
+    min-width: 300px;
 }
 
 img {
@@ -104,24 +105,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =============
-	short-project-discription	
+	short-project-description	
 ============= */
 
-.short-project-discription__subtitle {
+.short-project-description__subtitle {
     letter-spacing: -0.02rem;
     font-size: 0.7rem;
 
     margin-top: 7.4rem;
 }
 
-.short-project-discription__title {
+.short-project-description__title {
     font-size: 2.2rem;
     letter-spacing: -0.12rem;
 
     margin: 0.51rem 0 0.65rem 0;
 }
 
-.short-project-discription__description {
+.short-project-description__description {
     font-size: 0.8rem;
     line-height: 1.6rem;
     letter-spacing: 0.015rem;
@@ -133,16 +134,16 @@ h1, h2, h3, h4, h5, h6 {
 	articles	
 ============= */
 
-.articles__row {
+.articles .container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .article {
-    flex-basis: 26.5%;
+    margin: 1% 1% 1.2% 1%;
 
-    margin: 1% 1% 1.5% 1%;
-
+    width: 26.5%;
     height: 21.8rem;
 
     background-size: cover;
@@ -198,11 +199,16 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #0d73fc;
 }
 
-.articles__contact-now {
-    display: block;
+.articles__contact-now-container {
+    width: 100%;
+    height: max-content;
 
+    margin: 5.1rem auto 9.1rem auto;
+}
+
+.articles__contact-now {
     padding: 0.6rem 2.1rem;
-    margin: 4rem auto 11.35rem auto;
+    
 
     border: 2px solid #0d73fc;
 
