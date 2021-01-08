@@ -2,7 +2,7 @@ $('.owl-carousel').owlCarousel({
     items: 1,
     mouseDrag: false,
     nav: true,
-    lazyLoad: false
+    lazyLoad: true
 })
 
 $('.owl-nav button.owl-prev')[0].addEventListener('click', () => {
