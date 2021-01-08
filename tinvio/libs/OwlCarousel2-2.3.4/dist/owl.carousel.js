@@ -1962,7 +1962,6 @@
 	AutoHeight.prototype.update = function() {
 		var start = this._core._current,
 			end = start + this._core.settings.items,
-			lazyLoadEnabled = this._core.settings.lazyLoad,
 			visible = this._core.$stage.children().toArray().slice(start, end),
 			heights = [],
 			maxheight = 0;
@@ -1972,10 +1971,6 @@
 		});
 
 		maxheight = Math.max.apply(null, heights);
-
-		if (maxheight <= 1 && lazyLoadEnabled && this._previousHeight) {
-			maxheight = this._previousHeight;
-		}
 
 		this._previousHeight = maxheight;
 
@@ -2179,17 +2174,11 @@
 			create = function(path) {
 				icon = '<div class="owl-video-play-icon"></div>';
 
-				if (settings.lazyLoad) {
-					tnLink = $('<div/>',{
-						"class": 'owl-video-tn ' + lazyClass,
-						"srcType": path
-					});
-				} else {
+				
 					tnLink = $( '<div/>', {
 						"class": "owl-video-tn",
 						"style": 'opacity:1;background-image:url(' + path + ')'
 					});
-				}
 				target.after(tnLink);
 				target.after(icon);
 			};
@@ -2199,11 +2188,6 @@
 			"class": "owl-video-wrapper",
 			"style": dimensions
 		}));
-
-		if (this._core.settings.lazyLoad) {
-			srcType = 'data-src';
-			lazyClass = 'owl-lazy';
-		}
 
 		// custom thumbnail
 		if (customTn.length) {
