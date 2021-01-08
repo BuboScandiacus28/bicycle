@@ -1,11 +1,7 @@
-$('.owl-carousel').owlCarousel({
-    items: 1,
-    mouseDrag: false,
-    nav: true,
-    lazyLoad: true,
-    loop: true
-})
-
+$('.your-class').slick({
+    
+});
+/*
 $('.owl-nav button.owl-prev')[0].addEventListener('click', () => {
     let id = $('.product-present__description.active')[0].getAttribute('id').split('product-present__description-')[1];
     if (id == 1) return;
@@ -19,6 +15,7 @@ $('.owl-nav button.owl-next')[0].addEventListener('click', () => {
     document.querySelector(`#product-present__description-${id}`).classList.toggle('active');
     document.querySelector(`#product-present__description-${++id}`).classList.toggle('active');
 });
+*/
 
 $('.communication__before-btn')[0].addEventListener('click', (e) => {
     if (e.target.classList.contains('active')) return;
