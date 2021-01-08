@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'handsean';
+	src: url('../fonts/handsean/handsean.eot');
+	src: local('☺'), url('../fonts/handsean/handsean.woff') format('woff'),
+					 url('../fonts/handsean/handsean.ttf') format('truetype'),
+					 url('../fonts/handsean/handsean.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
